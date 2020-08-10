@@ -9,7 +9,7 @@
 # when the system is cooling.                   #
 #################################################
 
-from datetime import time
+import time
 import RPi.GPIO as GPIO
 import threading
 
@@ -34,6 +34,7 @@ class TemperatureController:
 
         GPIO.setup(self.peltierForwardPin, GPIO.OUT)
         GPIO.setup(self.peltierReversePin, GPIO.OUT)
+        GPIO.setup(self.fanPin, GPIO.OUT)
 
     def start(self):
         while (1):  # loop forever

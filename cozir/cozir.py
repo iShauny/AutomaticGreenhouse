@@ -17,7 +17,7 @@ import serial
 from enum import Enum
 
 # Verbosity level (0,1,2)
-verbosity = 1
+verbosity = 2
 
 
 class OpModes(Enum):
